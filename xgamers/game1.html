@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Title - XGamer Technologies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Game Details Header -->
+  <header class="game-header">
+    <h1>Elden Ring</h1> <!-- Replace with actual game title -->
+  </header>
+
+  <!-- Game Description Section -->
+  <section class="game-description">
+    <h2>About the Game</h2>
+    <p>
+     Elden Ring[b] is a 2022 action role-playing game developed by FromSoftware. It was directed by Hidetaka Miyazaki with worldbuilding provided by American fantasy writer George R. R. Martin. It was published for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S on February 25 in Japan by FromSoftware and internationally by Bandai Namco Entertainment. Set in the Lands Between, players control a customizable player character on a quest to repair the Elden Ring and become the new Elden Lord.
+    </p>
+  </section>
+   <!-- Price and Buy Now Section -->
+  <section class="price-buy">
+    <h2>Price</h2>
+    <p class="price">Ksh5999</p> <!-- Replace with actual price -->
+    <a href="https://purchase-link.com" target="_blank" class="buy-button">Buy Now</a> <!-- Replace with actual purchase link -->
+  </section>
+
+
+  <!-- Video and Screenshot Gallery -->
+  <section class="media-gallery">
+    <h2>Media</h2>
+    <div class="video-container">
+      <h3>Gameplay Video</h3>
+      <video controls>
+        <source src="videos/gameplay.mp4" type="video/mp4"> <!-- Replace with actual video file path -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="screenshot-gallery">
+      <h3>Screenshots</h3>
+      <div class="screenshots">
+        <img src="elden1.jpg" alt="Screenshot 1">
+        <img src="elden2.jpg" alt="Screenshot 2">
+        <img src="elden3.jpg" alt="Screenshot 3">
+        <!-- Add more screenshots as needed -->
+      </div>
+    </div>
+  </section>
+ <section class="reviews">
+    <h2>User Reviews</h2>
+    <div class="reviews-container">
+      <div class="review">
+        <p class="review-text">"This game is fantastic! A must-play for any RPG fan!"</p>
+        <p class="review-rating">Rating: ⭐⭐⭐⭐⭐</p>
+      </div>
+      <!-- Add more reviews here as needed -->
+    </div>
+
+    <!-- Review Submission Form -->
+    <h3>Leave a Review</h3>
+    <form class="review-form" id="review-form">
+      <textarea placeholder="Write your review here..." required></textarea>
+      <label for="rating">Rating:</label>
+      <select id="rating" required>
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+      </select>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

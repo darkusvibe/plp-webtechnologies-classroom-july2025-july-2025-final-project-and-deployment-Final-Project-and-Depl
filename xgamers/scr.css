@@ -1,0 +1,32 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const searchBar = document.getElementById('search-bar');
+  const priceRange = document.getElementById('price-range');
+  const priceValue = document.getElementById('price-value');
+  const gameItems = document.querySelectorAll('.game-item');
+
+  // Update displayed price value as the range slider moves
+  priceRange.addEventListener('input', () => {
+    priceValue.textContent = `$${priceRange.value}`;
+    filterGames();
+  });
+
+  // Filter games based on the search bar input and price range
+  searchBar.addEventListener('input', filterGames);
+
+  function filterGames() {
+    const searchQuery = searchBar.value.toLowerCase();
+    const maxPrice = parseInt(priceRange.value, 10);
+
+    gameItems.forEach((game) => {
+      const gameName = game.dataset.name.toLowerCase();
+      const gamePrice = parseInt(game.dataset.price, 10);
+
+      // Check if game matches search query and price filter
+      if (gameName.includes(searchQuery) && gamePrice <= maxPrice) {
+        game.style.display = '';
+      } else {
+        game.style.display = 'none';
+      }
+    });
+  }
+});

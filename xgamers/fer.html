@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - XGamer Technologies</title>
+  <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+
+
+  <header class="games-header">
+    <h1>Our Games</h1>
+    <p>Explore our collection of exciting games. Use the filters to find your perfect match!</p>
+  </header>
+
+
+  <section class="filters">
+    <input type="text" id="search-bar" placeholder="Search for games..." />
+    
+    <div class="filter-group">
+      <label for="price-range">Price Range:</label>
+      <input type="range" id="price-range" min="0" max="10000" step="5">
+      <span id="price-value">Ksh10000</span>
+    </div>
+
+    <div class="filter-group">
+      <label for="genre-filter">Genre:</label>
+      <select id="genre-filter">
+        <option value="all">All</option>
+        <option value="rpg">RPG</option>
+        <option value="action">Action</option>
+        <option value="adventure">Adventure</option>
+        <option value="strategy">Strategy</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="rating-filter">Rating:</label>
+      <select id="rating-filter">
+        <option value="all">All</option>
+        <option value="5">5 Stars</option>
+        <option value="4">4 Stars & Up</option>
+        <option value="3">3 Stars & Up</option>
+        <option value="2">2 Stars & Up</option>
+        <option value="1">1 Star & Up</option>
+      </select>
+    </div>
+  </section>
+
+
+  <section class="games-list">
+    <div class="game-item" data-name="Cyberpunk 2077" data-price="60" data-genre="rpg" data-rating="4.5">
+      <img src="images/cyberpunk.jpg" alt="Cyberpunk 2077">
+      <h3>Cyberpunk 2077</h3>
+      <p>Price: ksh6000</p>
+      <p>Genre: RPG</p>
+      <p>Rating: ⭐⭐⭐⭐☆</p>
+    </div>
+    <div class="game-item" data-name="Elden Ring" data-price="50" data-genre="action" data-rating="5">
+      <img src="elden.jpg" alt="Elden Ring">
+      <h3>Elden Ring</h3>
+      <p>Price: ksh5000</p>
+      <p>Genre: Action</p>
+      <p>Rating: ⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="game-item" data-name="Hollow Knight" data-price="15" data-genre="adventure" data-rating="4">
+      <img src="images/hollowknight.jpg" alt="Hollow Knight">
+      <h3>Hollow Knight</h3>
+      <p>Price: ksh1500</p>
+      <p>Genre: Adventure</p>
+      <p>Rating: ⭐⭐⭐⭐☆</p>
+    </div>
+    
+  </section>
+
+  <script src="scr.js"></script>
+</body>
+</html>
